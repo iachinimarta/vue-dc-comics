@@ -6,8 +6,8 @@
 
         <nav>
             <ul>
-                <li>
-                    <a href="#">Link</a>
+                <li v-for="(link, index) in links" :key="index">
+                    <a href="link.url">{{link.text}}</a>
                 </li>
             </ul>
         </nav>
@@ -17,7 +17,63 @@
 
 <script>
     export default {
-        name: 'MyHeader'
+        name: 'MyHeader',
+        data() {
+            return {
+                links: [
+                    {
+                        text: 'CHARACTERS',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'COMICS',
+                        url: '#',
+                        active: true
+                    },
+                    {
+                        text: 'MOVIES',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'TV',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'GAMES',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'COLLECTIBLES',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'VIDEOS',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'FANS',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'NEWS',
+                        url: '#',
+                        active: false
+                    },
+                    {
+                        text: 'SHOP',
+                        url: '#',
+                        active: false
+                    }
+                ]
+            }
+        }
     }
 </script>
 
