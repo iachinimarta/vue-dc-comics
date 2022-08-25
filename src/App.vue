@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div class="container" id="app">
     <MyHeader/>
     <MyMain/>
     <MyFooter/>
@@ -23,5 +23,6 @@
 </script>
 
 <style lang="scss">
+  @import './styles/CommonRules.scss'
 
 </style>

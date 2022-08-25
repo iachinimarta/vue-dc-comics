@@ -1,16 +1,19 @@
 <template>
     <header>
-        <div class="logo">
-            <a href="#">Logo</a>
-        </div>
+        <div class="container90">
+            <a href="#">
+                <img src="../assets/img/dc-logo.png" alt="">
+            </a>
 
-        <nav>
-            <ul>
-                <li v-for="(link, index) in links" :key="index">
-                    <a href="link.url">{{link.text}}</a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li v-for="(link, index) in links" :key="index">
+                        <a href="link.url">{{link.text}}</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
     </header>
   
 </template>
@@ -77,6 +80,36 @@
     }
 </script>
 
-<style>
+<style scoped lang="scss">
+
+
+    header {
+        background-color: #FFFFFF;
+        padding: 10px;
+        height: 100px;
+
+        .container90 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            img {
+                width: 100%;
+                height: 70px;
+            }
+
+            ul {
+                display: flex;     
+                
+                li {
+                    margin: 0 5px;
+                    
+                    a {
+                        color: black;
+                    }
+                }
+            }
+        }       
+    }
 
 </style>
