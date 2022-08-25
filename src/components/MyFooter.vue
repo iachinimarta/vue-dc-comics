@@ -3,23 +3,17 @@
     <div class="footer-up">
       <div class="container90 up">
         <div class="footer-link">
-          <ul>
-            <div><a href="#">DC COMICS</a></div>
-            <li><a href="#">Link del footer</a></li>
-          </ul>
-          <ul>
-            <div><a href="#">DC</a></div>
-            <li><a href="#">Link del footer</a></li>
-          </ul>
-          <ul>
-            <div><a href="#">SITES</a></div>
-            <li><a href="#">Link del footer</a></li>
-          </ul>
-          <ul>
-            <div><a href="#">SHOP</a></div>
-            <li><a href="#">Link del footer</a></li>
-          </ul>
+
+          <FooterMenu :title="'DC COMICS'" :urls="DcComics"/>
+
+          <FooterMenu :title="'DC'" :urls="DC"/>
+
+          <FooterMenu :title="'SITES'" :urls="Sites"/>
+
+          <FooterMenu :title="'SHOP'" :urls="Shop"/>
+
         </div>
+
         <div class="big-logo">
           <img src="../assets/img/dc-logo-bg.png" alt="">
         </div>
@@ -30,9 +24,35 @@
       <div class="container90">
         <div class="subscribe"><a href="#"> SIGN-UP NOW!</a></div>
         <div class="social-icon">
-          <div><a href="#">FOLLOW US</a></div>
+          <div class="follow">
+            <a href="#">FOLLOW US</a>
+          </div>
           <ul>
-            <li><a href="#">Icone</a></li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/footer-facebook.png" alt="Facebook">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/footer-twitter.png" alt="Twitter">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/footer-youtube.png" alt="YouTube">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/footer-pinterest.png" alt="Pinterest">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/img/footer-periscope.png" alt="Periscope">
+              </a>
+            </li>
           </ul>
         </div>
       </div>
@@ -43,12 +63,142 @@
 </template>
 
 <script>
+import FooterMenu from './FooterMenu.vue';
+
 export default {
-    name: 'MyFooter'
+    name: 'MyFooter',
+    components: {
+      FooterMenu
+    },
+    data() {
+      return {
+        DcComics: [
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          }
+        ],
+        DC: [
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          }
+        ],
+        Sites: [
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          }
+        ],
+        Shop: [
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          },
+          {
+            url: '#',
+            text: 'link'
+          }
+        ],
+        
+      }
+    }
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
   .footer-up {
     display: flex;
@@ -60,7 +210,9 @@ export default {
       .footer-link {
         display: flex;
         width: 30%;
+        align-items: center;
       }
+    }
 
       .big-logo {
         width: 70%;
@@ -72,7 +224,7 @@ export default {
         }
       }
     }  
-  }
+  
 
   .social-section {
       background-color: #303030;
@@ -85,10 +237,41 @@ export default {
         justify-content: space-between;
         align-items: center;
 
+        .subscribe {
+            border: 2px solid #0282F9;
+            height: 40px;
+            padding: 10px;
+
+            a {
+              color: white;
+            }
+          }
+
         .social-icon {
           display: flex;
+          align-items: center;
+
+          .follow {
+            margin-right: 15px;
+
+            a {
+              color: #0282F9;
+            }
+          }
+
+          ul {
+            display: flex;
+
+            li {
+              margin: 0 5px;
+            }
+          }
+
+
         }
       }
+
+      
   } 
 
 </style>

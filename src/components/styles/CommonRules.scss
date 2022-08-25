@@ -4,8 +4,15 @@
     box-sizing: border-box;
 }
 
+$brand-color: #0282f9;
+
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.active {
+    border-bottom: 1px solid $brand-color;
 }
 
 .container {
@@ -23,4 +30,8 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.title {
+    color: white;
 }

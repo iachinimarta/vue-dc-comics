@@ -23,6 +23,6 @@
 </script>
 
 <style lang="scss">
-  @import './styles/CommonRules.scss'
+  @import './components/styles/CommonRules.scss'
 
 </style>

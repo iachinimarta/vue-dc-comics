@@ -7,7 +7,7 @@
 
             <nav>
                 <ul>
-                    <li v-for="(link, index) in links" :key="index">
+                    <li v-for="(link, index) in links" :key="index" :class="link.active == true? 'active' : ''">
                         <a href="link.url">{{link.text}}</a>
                     </li>
                 </ul>
@@ -81,7 +81,6 @@
 </script>
 
 <style scoped lang="scss">
-
 
     header {
         background-color: #FFFFFF;
