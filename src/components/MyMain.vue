@@ -1,11 +1,9 @@
 <template>
   <main>
     <div class="contents">
-      <div class="container90">
         <div class="content">
-          Contents goes here
+          <MyCards/>
         </div>
-      </div>
     </div>
 
     <div class="bonus">
@@ -30,8 +28,13 @@
 </template>
 
 <script>
+import MyCards from './MyCards.vue';
+
 export default {
     name: 'MyMain',
+    components: {
+      MyCards
+    },
     data() {
       return {
         cards: [
@@ -64,14 +67,15 @@ export default {
 
 <style scoped lang="scss">
   .contents {
-    height: 100px;
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
 
     .content {
-    color: white;
+      color: white;
+      width: 100%;
+      height: 100%;
     }
     
   }

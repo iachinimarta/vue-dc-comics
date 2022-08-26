@@ -18,7 +18,6 @@
         props: {
             title: String,
             urls: Array,
-            color: String
         }
     }
 </script>

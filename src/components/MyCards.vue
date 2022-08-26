@@ -1,5 +1,8 @@
 <template>
     <div>
+        <div class="jumbotron">
+            <img src="../assets/img/jumbotron.jpg" alt="">
+        </div>
         prova
     </div> 
 </template>
@@ -88,6 +91,17 @@
     }
 </script>
 
-<style>
+<style lang="scss">
+    .jumbotron {
+        width: 100%;
+        height: 200px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
 
 </style>

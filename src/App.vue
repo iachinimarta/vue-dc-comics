@@ -16,7 +16,7 @@
     components: {
       MyHeader,
       MyMain,
-      MyFooter,
+      MyFooter
     }
   }
 </script>
