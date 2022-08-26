@@ -2,6 +2,9 @@
   <main>
     <div class="contents">
         <div class="content">
+          <div class="jumbotron">
+            <img src="../assets/img/jumbotron.jpg" alt="">
+          </div>
           <MyCards/>
         </div>
     </div>
@@ -76,6 +79,19 @@ export default {
       color: white;
       width: 100%;
       height: 100%;
+
+        .jumbotron {
+          width: 100%;
+          height: 300px;
+
+          img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              object-position: 0 0;
+          }
+        }
+
     }
     
   }

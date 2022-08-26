@@ -1,9 +1,12 @@
 <template>
     <div>
-        <div class="jumbotron">
-            <img src="../assets/img/jumbotron.jpg" alt="">
+        <div class="card-container">
+            <div class="card" v-for="(card, index) in cards" :key="index">
+                {{card.series}}
+
+            </div>
+
         </div>
-        prova
     </div> 
 </template>
 
@@ -92,16 +95,5 @@
 </script>
 
 <style lang="scss">
-    .jumbotron {
-        width: 100%;
-        height: 200px;
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: top;
-        }
-    }
-
+    
 </style>
