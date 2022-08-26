@@ -13,8 +13,14 @@
         <div class="card-container">
           <ul>
             <li v-for="(card, index) in cards" :key="index">
-              <img :src="card.img" :alt="card.text">
-              <h5>{{card.text}}</h5>
+              <div class="img-container">
+                <img :src="card.img" :alt="card.text">
+              </div>
+              <h5>
+                <a href="#">
+                  {{card.text}}
+                </a>
+              </h5>
             </li>
           </ul>
         </div>
@@ -82,9 +88,27 @@ export default {
 
       li {
         display: flex;
+        align-items: center;
 
-        img {
-          width: 40px;
+        .img-container {
+          margin-right: 5px;
+          width: 50px;
+          height: 50px;
+
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+
+        h5 {
+          font-size: 10px;
+          font-weight: normal;
+          
+          a {
+            color: white;
+          }
         }
       }
     }

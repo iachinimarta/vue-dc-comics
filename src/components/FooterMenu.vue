@@ -17,7 +17,8 @@
         name: 'FooterMenu',
         props: {
             title: String,
-            urls: Array
+            urls: Array,
+            color: String
         }
     }
 </script>
@@ -28,6 +29,10 @@
 
         .title {
             margin-bottom: 10px;
+        }
+
+        a {
+            color: lightgrey;
         }
     }
 

@@ -4,7 +4,7 @@
       <div class="container90 up">
         <div class="footer-link">
 
-          <FooterMenu :title="'DC COMICS'" :urls="DcComics"/>
+          <FooterMenu :title="'DC COMICS'" :urls="DcComics" :color="'white'"/>
 
           <FooterMenu :title="'DC'" :urls="DC"/>
 
@@ -272,6 +272,6 @@ export default {
       }
 
       
-  } 
+  }
 
 </style>
