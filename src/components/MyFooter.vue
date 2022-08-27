@@ -22,11 +22,11 @@
     
     <div class="social-section">
       <div class="container90">
-        <div class="subscribe"><a href="#"> SIGN-UP NOW!</a></div>
+        <h4 class="subscribe"><a href="#"> SIGN-UP NOW!</a></h4>
         <div class="social-icon">
-          <div class="follow">
+          <h4 class="follow">
             <a href="#">FOLLOW US</a>
-          </div>
+          </h4>
           <ul>
             <li>
               <a href="#">
@@ -75,121 +75,109 @@ export default {
         DcComics: [
           {
             url: '#',
-            text: 'link'
+            text: 'Characters'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Comics'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Movies'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'TV'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Games'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Videos'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'News'
           }
         ],
         DC: [
           {
             url: '#',
-            text: 'link'
+            text: 'Terms Of Use'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Privacy policy (New)'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Ad Choices'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Advertising'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Jobs'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Subscriptions'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'Talent Workshops'
+          },
+          {
+            url: '#',
+            text: 'CPSC Certificates'
+          },
+          {
+            url: '#',
+            text: 'Ratings'
+          },
+          {
+            url: '#',
+            text: 'Shop Help'
+          },
+          {
+            url: '#',
+            text: 'Contact Us'
           }
         ],
         Sites: [
           {
             url: '#',
-            text: 'link'
+            text: 'DC'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'MAD Magazine'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'DC Kids'
           },
           {
             url: '#',
-            text: 'link'
+            text: 'DC Universe'
           },
           {
             url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
+            text: 'DC Power Visa'
           }
         ],
         Shop: [
           {
             url: '#',
-            text: 'link'
+            text: 'Shop DC'
           },
           {
             url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
-          },
-          {
-            url: '#',
-            text: 'link'
+            text: 'Shop DC Collectibles'
           }
         ],
         
@@ -210,17 +198,20 @@ export default {
       .footer-link {
         display: flex;
         width: 30%;
-        align-items: center;
+        padding: 20px;
       }
     }
 
       .big-logo {
         width: 70%;
-        text-align: center;
+        position: relative;
 
         img {
-          width: 300px;
-          height: 300px;
+          width: 400px;
+          height: 400px;
+          position: absolute;
+          bottom: -55px;
+          right: 30px;
         }
       }
     }  
@@ -231,6 +222,9 @@ export default {
       height: 100px;
       display: flex;
       align-items: center;
+      position: absolute;
+      width: 100%;
+      z-index: 998;
 
       .container90 {
         display: flex;

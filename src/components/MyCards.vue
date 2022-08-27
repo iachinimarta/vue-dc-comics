@@ -2,8 +2,10 @@
     <div>
         <div class="card-container">
             <div class="card" v-for="(card, index) in cards" :key="index">
-                {{card.series}}
-
+                <a href="#">
+                    <img :src="card.thumb" :alt="card.series">
+                    <div>{{card.series.toUpperCase()}}</div>
+                </a>
             </div>
 
         </div>
@@ -94,6 +96,31 @@
     }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
+
+    .card-container {
+        height: 300px;
+        width: 60%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        font-size: 10px;
+        padding: 40px 0;
+
+        .card {
+            width: calc(100% / 6 - 20px);
+            height: 80px;
+            margin: 10px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: 0 0;
+            }
+        }
+    }
+    
     
 </style>

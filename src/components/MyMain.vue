@@ -5,7 +5,16 @@
           <div class="jumbotron">
             <img src="../assets/img/jumbotron.jpg" alt="">
           </div>
+          <div class="current-series">CURRENT SERIES</div>
           <MyCards/>
+          <div class="d-flex">
+            <div class="load-more">
+              <a href="#">
+                LOAD MORE
+              </a>
+            </div>
+          </div>
+          
         </div>
     </div>
 
@@ -69,6 +78,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
   .contents {
     background-color: black;
     color: white;
@@ -78,11 +88,12 @@ export default {
     .content {
       color: white;
       width: 100%;
-      height: 100%;
 
         .jumbotron {
           width: 100%;
           height: 300px;
+          margin-top: 90px;
+          
 
           img {
               width: 100%;
@@ -92,6 +103,29 @@ export default {
           }
         }
 
+        .d-flex {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 50px;
+
+          .load-more {
+            background-color: #0282f9;
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+          }
+        }
+
+        .current-series {
+            background-color: #0282F9;
+            height: 40px;
+            width: 200px;
+            display: inline-block;
+            padding: 10px;
+            text-align: center;
+            transform: translateX(50%);
+        }
     }
     
   }

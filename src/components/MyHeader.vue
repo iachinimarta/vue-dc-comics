@@ -85,7 +85,12 @@
     header {
         background-color: #FFFFFF;
         padding: 10px;
-        height: 100px;
+        height: 90px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        width: 100%;
 
         .container90 {
             display: flex;
@@ -105,6 +110,7 @@
                     
                     a {
                         color: black;
+                        font-weight: bold;
                     }
                 }
             }

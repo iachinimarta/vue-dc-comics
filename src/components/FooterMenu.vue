@@ -1,6 +1,6 @@
 <template>
     <div class="element-container">
-        <div class="title">{{title}}</div>
+        <h4 class="title">{{title}}</h4>
         <ul>
             <li class="title-li" v-for="(url, index) in urls" :key="index">
                 <a href="url.url">
